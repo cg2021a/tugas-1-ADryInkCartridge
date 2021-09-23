@@ -10,8 +10,8 @@ Belakang :
 
 
 Kanan : 
-![ktm3](https://github.com/cg2021a/tugas-1-ADryInkCartridge/blob/main/1244237.jpg)
+![ktm3](https://github.com/cg2021a/tugas-1-ADryInkCartridge/blob/main/1244239.jpg)
 
 
 Kiri : 
-![ktm4](https://github.com/cg2021a/tugas-1-ADryInkCartridge/blob/main/1244239.jpg)
+![ktm4](https://github.com/cg2021a/tugas-1-ADryInkCartridge/blob/main/1244237.jpg)
