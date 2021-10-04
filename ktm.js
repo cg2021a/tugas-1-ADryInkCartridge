@@ -20,6 +20,11 @@ ktm1_photo = [
   0.042, 0.29, 0.15, 0.29, 0.14, 0.18,
 ];
 
+ktm1_3d = [
+  -0.042, 0.13, 0.655, 0.13, -0.042, 0.11,
+
+  0.655, 0.13, -0.042, 0.11,0.655, 0.11
+];
 ktm2_top = [
   0.21, 0.005, 0.22, 0.575, 0.145, 0.575,
 
@@ -41,6 +46,11 @@ ktm2_photo = [
   0.365, 0.18, 0.37, 0.075, 0.485,0.075,
 ];
 
+ktm2_3d = [
+  0.125, 0.005, 0.545, 0.005, 0.125, -0.01,
+  0.545, 0.005,0.545, -0.01, 0.125, -0.01,
+];
+
 let color = [];
 
 for (let i = 0; i < ktm1_top.length / 2; i++) {
@@ -59,6 +69,10 @@ for (let i = 0; i < ktm1_mid.length / 2; i++) {
   let rgbO = [1, 1, 1, 1];
   color = color.concat(rgbO);
 }
+for (let i = 0; i < ktm1_mid.length / 2; i++) {
+  let rgbO = [0.6, 0.635, 0.686, 1];
+  color = color.concat(rgbO);
+}
 for (let i = 0; i < ktm1_top.length / 2; i++) {
   let rgbO = [0.9, 0.9, 0.9, 1];
   color = color.concat(rgbO);
@@ -73,6 +87,10 @@ for (let i = 0; i < ktm1_bot.length / 2; i++) {
 }
 for (let i = 0; i < ktm1_mid.length / 2; i++) {
   let rgbO = [1, 1, 1, 1];
+  color = color.concat(rgbO);
+}
+for (let i = 0; i < ktm1_mid.length / 2; i++) {
+  let rgbO = [0.6, 0.635, 0.686, 1];
   color = color.concat(rgbO);
 }
 

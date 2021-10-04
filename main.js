@@ -10,8 +10,8 @@ function main() {
     const context = canvas.getContext('webgl');
  
      var vertices = [
-            ...ktm1_top,...ktm1_mid,...ktm1_bot, ...ktm1_photo,
-            ...ktm2_top,...ktm2_mid,...ktm2_bot, ...ktm2_photo
+            ...ktm1_top,...ktm1_mid,...ktm1_bot, ...ktm1_photo,...ktm1_3d,
+            ...ktm2_top,...ktm2_mid,...ktm2_bot, ...ktm2_photo,...ktm2_3d,
          ];
     
      var posBuff = context.createBuffer();
@@ -84,7 +84,7 @@ function main() {
             1.0, 0.0, 0.0, 0.0,
             0.0, 1.0, 0.0, 0.0,
             0.0, 0.0, 1.0, 0.0,
-            0.2,  dy, 0.0, 1.0,
+            0.2, dy, 0.0, 1.0,
         ]
             
         context.clearColor(0.160, 0.156, 0.156, 1);
@@ -96,14 +96,14 @@ function main() {
         context.drawArrays(
             context.TRIANGLES, 
             0, 
-            (ktm1_top.length + ktm1_bot.length + ktm1_mid.length + ktm1_photo.length)/2, 
+            (ktm1_top.length + ktm1_bot.length + ktm1_mid.length + ktm1_photo.length + ktm1_3d.length)/2, 
         );
             
         context.uniformMatrix4fv(u_matrix, false, leftObject);
         context.drawArrays(
             context.TRIANGLES, 
-            (ktm1_top.length + ktm1_bot.length + ktm1_mid.length + ktm1_photo.length)/2, 
-            (ktm2_top.length + ktm2_bot.length + ktm2_mid.length + ktm2_photo.length)/2
+            (ktm1_top.length + ktm1_bot.length + ktm1_mid.length + ktm1_photo.length + ktm1_3d.length)/2, 
+            (ktm2_top.length + ktm2_bot.length + ktm2_mid.length + ktm2_photo.length + ktm2_3d.length)/2
         );
         requestAnimationFrame(drawScene);
     }
