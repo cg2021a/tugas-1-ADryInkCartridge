@@ -39,7 +39,7 @@ function resetTag(cubes) {
 window.addEventListener("resize", () => {
     size.w = window.innerWidth * 0.8;
     size.h = window.innerHeight * 0.8;
-    camera.aspect = s.w / s.w;
+    camera.aspect = size.w / size.w;
     camera.updateProjectionMatrix();
     renderer.setSize(size.width, size.height);
     renderer.setPixelRatio(window.devicePixelRatio);

@@ -31,12 +31,17 @@ var delta = 0
 var speed = 2
 var score = 0
 const maxAmnt = 10
+var spawntime = 0 
+var amnt = 0
 const colors = randColorGen(10);
 var sceneBuffer = []
-
+var cons = 0;
 start.addEventListener('click',(e)=>{
-  selected = []
-  canvas.addEventListener("click", (e) => {
+  cons++
+  gameloop()
+})
+canvas.addEventListener('click', res)
+  function res(e){
     mouse.x = ( e.offsetX / size.w) * 2 - 1;
     mouse.y = -( e.offsetY / size.h) * 2 + 1;
     rayCast.setFromCamera(mouse, camera);
@@ -71,7 +76,10 @@ start.addEventListener('click',(e)=>{
       resetTag(selected)
       selected = []
     }
-  });
+  }
+
+function gameloop(){
+  selected = []
   scoreHTML.innerHTML = ("Score: " + 0)
   while(scene.children.length > 0){ 
     scene.remove(scene.children[0]); 
@@ -84,10 +92,11 @@ start.addEventListener('click',(e)=>{
   for (i = 0; i<5 ; i++) {
     coupling(colors)
   }
-  var amnt = 0
-  var spawntime = 0 + speed
-
+  amnt = 0
+  spawntime = 0 + speed
+  
   function animate(){
+    console.log(cons)
     delta = clock.getDelta();
     time += delta;
     if(time >= spawntime && amnt < maxAmnt){
@@ -107,12 +116,10 @@ start.addEventListener('click',(e)=>{
       console.log(speed)
     }
     
-
     orbitControls.update();
     renderer.render(scene,camera)
     requestAnimationFrame(animate);
   }
-
   animate()
-})
+}
 
