@@ -1,0 +1,11 @@
+Model Information:
+* title:	[ Free ] Womb Chair
+* source:	https://sketchfab.com/3d-models/free-womb-chair-2284642f20524ad7b86812984c5b5117
+* author:	ArchViz (https://sketchfab.com/Archivz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "[ Free ] Womb Chair" (https://sketchfab.com/3d-models/free-womb-chair-2284642f20524ad7b86812984c5b5117) by ArchViz (https://sketchfab.com/Archivz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
